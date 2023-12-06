@@ -62,6 +62,13 @@
 			<version>3.0.3</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- thymeleaf -->
+		<!-- https://mvnrepository.com/artifact/nz.net.ultraq.thymeleaf/thymeleaf-layout-dialect -->
+		<dependency>
+			<groupId>nz.net.ultraq.thymeleaf</groupId>
+			<artifactId>thymeleaf-layout-dialect</artifactId>
+			<!-- 버전은 지우고 작성 -->
+		</dependency>
 	</dependencies>
 
 	<build>
