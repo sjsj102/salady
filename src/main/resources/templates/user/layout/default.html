@@ -1,54 +1,55 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
-<head>
-  <meta charset="UTF-8">
-  <title th:text="${title}"></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- favicon -->
-  <link rel="shortcut icon" th:href="@{/images/salady_favicon.ico}">
+  <head>
+    <meta charset="UTF-8">
+    <title th:text="${title}"></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- favicon -->
+    <link rel="shortcut icon" th:href="@{/images/salady_favicon.ico}">
 
-  <!-- css -->
-  <link rel="stylesheet" th:href="@{/css/style.css}">
-  <link rel="stylesheet" th:href="@{/css/style_m.css}">
-  <link rel="stylesheet" th:href="@{/css/reset.css}">
-  <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
-  <link rel="stylesheet" th:href="@{/css/font/font.css}">
-  <!-- swiper plugin css -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <!-- css -->
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{/css/style_m.css}">
+    <link rel="stylesheet" th:href="@{/css/reset.css}">
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/font/font.css}">
+    <!-- swiper plugin css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 
-</head>
-<body>
+  </head>
+  <body>
+    <!-- user Top Banner fragment -->
+    <div th:replace="~{user/fragments/userHeaderFrg :: userTopBanner}"></div>
+    <!-- header fragment -->
+    <header th:replace="~{user/fragments/userHeaderFrg :: userHeaderFrg}"></header>
 
-  <!-- header fragments -->
-  <header th:replace="~{user/fragments/userHeaderFrg :: userHeaderFrg}"></header>
+    <!-- custom contents fragments -->
+    <th:block layout:fragment="customContents">
 
-  <!-- custom contents fragments -->
-  <th:block layout:fragment="customContents">
+    </th:block>
 
-  </th:block>
+    <!-- footer fragment -->
+    <footer th:replace="user/fragments/userFooterFrg :: userFooterFrg"></footer>
 
-  <!-- footer fragments -->
-  <footer th:replace="user/fragments/userFooterFrg :: userFooterFrg"></footer>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script th:src="@{/js/jquery.scrollToGiveClass.js}"></script>
 
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <!-- plugin -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script th:src="@{/js/jquery.scrollToGiveClass.js}"></script>
+    <!-- custom js file link fragments -->
+    <th:block layout:fragment="customJsFile">
 
-  <!-- custom js file link fragments -->
-  <th:block layout:fragment="customJsFile">
+    </th:block>
 
-  </th:block>
+    <!-- js -->
+    <script th:src="@{/js/script.js}"></script>
 
-  <!-- js -->
-  <script th:src="@{/js/script.js}"></script>
+    <!-- custom js code fragments -->
+    <th:block layout:fragment="customJsCode">
 
-  <!-- custom js code fragments -->
-  <th:block layout:fragment="customJsCode">
+    </th:block>
 
-  </th:block>
-
-</body>
+  </body>
 </html>
