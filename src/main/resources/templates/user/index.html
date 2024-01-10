@@ -4,7 +4,6 @@
         layout:decorate="~{user/layout/default}">
     <head>
         <!-- custom css -->
-        <meta charset="UTF-8">
         <meta name="title" content="샐러디, 매일매일 찾아가는 건강 식단">
         <meta name="description" content="매일매일 신선한 샐러드를 집에서 만나요! 주문 당일 제조되어 보내지는 건강하고 든든한 한 끼, 샐러디가 책임져요.">
         <meta name="keywords" content="샐러드, 닭가슴살, 샐러드배달, 샐러드도시락, 다이어트, 다이어트식단, 다이어트도시락, 헬스, 식단, 식단관리, 배달샐러드">
@@ -15,7 +14,7 @@
         <main>
             <section id="main_banner">
                 <video loop autoplay muted>
-                    <source src="/images/video/main_video_1.mp4" >
+                    <source th:src="@{/images/video/main_video_1.mp4}" >
                 </video>
                 <div class="main_inner">
                     <div id="main_txt" class="swiper mySwiper swiper-no-swiping">
@@ -73,7 +72,7 @@
                         <input class="search_area" type="search" placeholder="아보카도 샐러드"
                                onclick="this.placeholder=''"
                                onblur="this.placeholder='아보카도 샐러드'">
-                        <input type="image" class="search_btn" src="/images/search_btn.png" alt="검색">
+                        <input type="image" class="search_btn" th:src="@{/images/search_btn.png}" alt="검색">
                     </div>
                 </div>
             </section> <!--// #main_banner -->
@@ -81,7 +80,7 @@
                 <div class="banner_inner">
                     <ul>
                         <li class="left_banner">
-                            <a href="#">
+                            <a th:href="@{#}">
                                 <p>가입 후 첫 주문시</p>
                                 <h5>
                                     베스트 상품 5종 체험 키트
@@ -92,7 +91,7 @@
                             </a>
                         </li> <!--// .left_banner -->
                         <li class="right_banner">
-                            <a href="#">
+                            <a th:href="@{#}">
                                 <p>23 S/S 시즌맞이 신상품 출시 기념</p>
                                 <h5>
                                     샐러디 2기 리뷰 체험단
@@ -117,14 +116,14 @@
                     <div id="ai_slide" class="scroll_crop mySwiper Swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a th:href="@{#}">
                                     <div class="thumb_img">
-                                        <img src="/images/ai_thumb_img_1.png" alt="썸네일이미지">
+                                        <img th:src="@{/images/ai_thumb_img_1.png}" alt="썸네일이미지">
                                         <!--  hover -->
                                         <div class="thumb_hover">
                                             <ul>
-                                                <li class="wish_icon"><img src="/images/wish_icon.png" alt="찜하기"></li>
-                                                <li class="cart_icon"><img src="/images/cart_icon.png" alt="장바구니"></li>
+                                                <li class="wish_icon"><img th:src="@{/images/wish_icon.png}" alt="찜하기"></li>
+                                                <li class="cart_icon"><img th:src="@{/images/cart_icon.png}" alt="장바구니"></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -150,14 +149,14 @@
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a th:href="@{#}">
                                     <div class="thumb_img">
-                                        <img src="/images/ai_thumb_img_2.png" alt="썸네일이미지">
+                                        <img th:src="@{/images/ai_thumb_img_2.png}" alt="썸네일이미지">
                                         <!--  hover -->
                                         <div class="thumb_hover">
                                             <ul>
-                                                <li class="wish_icon"><img src="/images/wish_icon.png" alt="찜하기"></li>
-                                                <li class="cart_icon"><img src="/images/cart_icon.png" alt="장바구니"></li>
+                                                <li class="wish_icon"><img th:src="@{/images/wish_icon.png}" alt="찜하기"></li>
+                                                <li class="cart_icon"><img th:src="@{/images/cart_icon.png}" alt="장바구니"></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -183,14 +182,14 @@
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a th:href="@{#}">
                                     <div class="thumb_img">
-                                        <img src="/images/ai_thumb_img_3.png" alt="썸네일이미지">
+                                        <img th:src="@{/images/ai_thumb_img_3.png}" alt="썸네일이미지">
                                         <!--  hover -->
                                         <div class="thumb_hover">
                                             <ul>
-                                                <li class="wish_icon"><img src="/images/wish_icon.png" alt="찜하기"></li>
-                                                <li class="cart_icon"><img src="/images/cart_icon.png" alt="장바구니"></li>
+                                                <li class="wish_icon"><img th:src="@{/images/wish_icon.png}" alt="찜하기"></li>
+                                                <li class="cart_icon"><img th:src="@{/images/cart_icon.png}" alt="장바구니"></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -216,14 +215,14 @@
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a th:href="@{#}">
                                     <div class="thumb_img">
-                                        <img src="/images/ai_thumb_img_4.png" alt="썸네일이미지">
+                                        <img th:src="@{/images/ai_thumb_img_4.png}" alt="썸네일이미지">
                                         <!--  hover -->
                                         <div class="thumb_hover">
                                             <ul>
-                                                <li class="wish_icon"><img src="/images/wish_icon.png" alt="찜하기"></li>
-                                                <li class="cart_icon"><img src="/images/cart_icon.png" alt="장바구니"></li>
+                                                <li class="wish_icon"><img th:src="@{/images/wish_icon.png}" alt="찜하기"></li>
+                                                <li class="cart_icon"><img th:src="@{/images/cart_icon.png}" alt="장바구니"></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -250,14 +249,14 @@
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a th:href="@{#}">
                                     <div class="thumb_img">
-                                        <img src="/images/ai_thumb_img_5.png" alt="썸네일이미지">
+                                        <img th:src="@{/images/ai_thumb_img_5.png}" alt="썸네일이미지">
                                         <!--  hover -->
                                         <div class="thumb_hover">
                                             <ul>
-                                                <li class="wish_icon"><img src="/images/wish_icon.png" alt="찜하기"></li>
-                                                <li class="cart_icon"><img src="/images/cart_icon.png" alt="장바구니"></li>
+                                                <li class="wish_icon"><img th:src="@{/images/wish_icon.png}" alt="찜하기"></li>
+                                                <li class="cart_icon"><img th:src="@{/images/cart_icon.png}" alt="장바구니"></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -283,14 +282,14 @@
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a th:href="@{#}">
                                     <div class="thumb_img">
-                                        <img src="/images/ai_thumb_img_5.png" alt="썸네일이미지">
+                                        <img th:src="@{/images/ai_thumb_img_5.png}" alt="썸네일이미지">
                                         <!--  hover -->
                                         <div class="thumb_hover">
                                             <ul>
-                                                <li class="wish_icon"><img src="/images/wish_icon.png" alt="찜하기"></li>
-                                                <li class="cart_icon"><img src="/images/cart_icon.png" alt="장바구니"></li>
+                                                <li class="wish_icon"><img th:src="@{/images/wish_icon.png}" alt="찜하기"></li>
+                                                <li class="cart_icon"><img th:src="@{/images/cart_icon.png}" alt="장바구니"></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -336,7 +335,7 @@
                     샐러디 최고 인기 상품 👍
 
 
-                    <a href="#">
+                    <a th:href="@{#}">
                         상품 더보기 +
                     </a>
                 </h3>
@@ -345,14 +344,14 @@
                     <div id="suggest_slide" class="scroll_crop mySwiper Swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a th:href="@{#}">
                                     <div class="thumb_img">
-                                        <img src="/images/sg_thumb_img_1.png" alt="썸네일이미지">
+                                        <img th:src="@{/images/sg_thumb_img_1.png}" alt="썸네일이미지">
                                         <!--  hover -->
                                         <div class="thumb_hover">
                                             <ul>
-                                                <li class="wish_icon"><img src="/images/wish_icon.png" alt="찜하기"></li>
-                                                <li class="cart_icon"><img src="/images/cart_icon.png" alt="장바구니"></li>
+                                                <li class="wish_icon"><img th:src="@{/images/wish_icon.png}" alt="찜하기"></li>
+                                                <li class="cart_icon"><img th:src="@{/images/cart_icon.png}" alt="장바구니"></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -378,14 +377,14 @@
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a th:href="@{#}">
                                     <div class="thumb_img">
-                                        <img src="/images/sg_thumb_img_2.png" alt="썸네일이미지">
+                                        <img th:src="@{/images/sg_thumb_img_2.png}" alt="썸네일이미지">
                                         <!--  hover -->
                                         <div class="thumb_hover">
                                             <ul>
-                                                <li class="wish_icon"><img src="/images/wish_icon.png" alt="찜하기"></li>
-                                                <li class="cart_icon"><img src="/images/cart_icon.png" alt="장바구니"></li>
+                                                <li class="wish_icon"><img th:src="@{/images/wish_icon.png}" alt="찜하기"></li>
+                                                <li class="cart_icon"><img th:src="@{/images/cart_icon.png}" alt="장바구니"></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -411,14 +410,14 @@
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a th:href="@{#}">
                                     <div class="thumb_img">
-                                        <img src="/images/sg_thumb_img_3.png" alt="썸네일이미지">
+                                        <img th:src="@{/images/sg_thumb_img_3.png}" alt="썸네일이미지">
                                         <!--  hover -->
                                         <div class="thumb_hover">
                                             <ul>
-                                                <li class="wish_icon"><img src="/images/wish_icon.png" alt="찜하기"></li>
-                                                <li class="cart_icon"><img src="/images/cart_icon.png" alt="장바구니"></li>
+                                                <li class="wish_icon"><img th:src="@{/images/wish_icon.png}" alt="찜하기"></li>
+                                                <li class="cart_icon"><img th:src="@{/images/cart_icon.png}" alt="장바구니"></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -444,14 +443,14 @@
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a th:href="@{#}">
                                     <div class="thumb_img">
-                                        <img src="/images/sg_thumb_img_4.png" alt="썸네일이미지">
+                                        <img th:src="@{/images/sg_thumb_img_4.png}" alt="썸네일이미지">
                                         <!--  hover -->
                                         <div class="thumb_hover">
                                             <ul>
-                                                <li class="wish_icon"><img src="/images/wish_icon.png" alt="찜하기"></li>
-                                                <li class="cart_icon"><img src="/images/cart_icon.png" alt="장바구니"></li>
+                                                <li class="wish_icon"><img th:src="@{/images/wish_icon.png}" alt="찜하기"></li>
+                                                <li class="cart_icon"><img th:src="@{/images/cart_icon.png}" alt="장바구니"></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -477,14 +476,14 @@
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a th:href="@{#}">
                                     <div class="thumb_img">
-                                        <img src="/images/sg_thumb_img_5.png" alt="썸네일이미지">
+                                        <img th:src="@{/images/sg_thumb_img_5.png}" alt="썸네일이미지">
                                         <!--  hover -->
                                         <div class="thumb_hover">
                                             <ul>
-                                                <li class="wish_icon"><img src="/images/wish_icon.png" alt="찜하기"></li>
-                                                <li class="cart_icon"><img src="/images/cart_icon.png" alt="장바구니"></li>
+                                                <li class="wish_icon"><img th:src="@{/images/wish_icon.png}" alt="찜하기"></li>
+                                                <li class="cart_icon"><img th:src="@{/images/cart_icon.png}" alt="장바구니"></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -510,14 +509,14 @@
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a th:href="@{#}">
                                     <div class="thumb_img">
-                                        <img src="/images/ai_thumb_img_5.png" alt="썸네일이미지">
+                                        <img th:src="@{/images/ai_thumb_img_5.png}" alt="썸네일이미지">
                                         <!--  hover -->
                                         <div class="thumb_hover">
                                             <ul>
-                                                <li class="wish_icon"><img src="/images/wish_icon.png" alt="찜하기"></li>
-                                                <li class="cart_icon"><img src="/images/cart_icon.png" alt="장바구니"></li>
+                                                <li class="wish_icon"><img th:src="@{/images/wish_icon.png}" alt="찜하기"></li>
+                                                <li class="cart_icon"><img th:src="@{/images/cart_icon.png}" alt="장바구니"></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -543,14 +542,14 @@
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a th:href="@{#}">
                                     <div class="thumb_img">
-                                        <img src="/images/ai_thumb_img_5.png" alt="썸네일이미지">
+                                        <img th:src="@{/images/ai_thumb_img_5.png}" alt="썸네일이미지">
                                         <!--  hover -->
                                         <div class="thumb_hover">
                                             <ul>
-                                                <li class="wish_icon"><img src="/images/wish_icon.png" alt="찜하기"></li>
-                                                <li class="cart_icon"><img src="/images/cart_icon.png" alt="장바구니"></li>
+                                                <li class="wish_icon"><img th:src="@{/images/wish_icon.png}" alt="찜하기"></li>
+                                                <li class="cart_icon"><img th:src="@{/images/cart_icon.png}" alt="장바구니"></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -576,14 +575,14 @@
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a th:href="@{#}">
                                     <div class="thumb_img">
-                                        <img src="/images/ai_thumb_img_5.png" alt="썸네일이미지">
+                                        <img th:src="@{/images/ai_thumb_img_5.png}" alt="썸네일이미지">
                                         <!--  hover -->
                                         <div class="thumb_hover">
                                             <ul>
-                                                <li class="wish_icon"><img src="/images/wish_icon.png" alt="찜하기"></li>
-                                                <li class="cart_icon"><img src="/images/cart_icon.png" alt="장바구니"></li>
+                                                <li class="wish_icon"><img th:src="@{/images/wish_icon.png}" alt="찜하기"></li>
+                                                <li class="cart_icon"><img th:src="@{/images/cart_icon.png}" alt="장바구니"></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -641,7 +640,7 @@
                                     내 몸 올바른 루틴 만들기
                                 </h5>
                             </div>
-                            <a href="#" class="conts_btn">
+                            <a th:href="@{#}" class="conts_btn">
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -662,7 +661,7 @@
                                     닭가슴살 베이스의 샐러디 베스트셀러
                                 </h5>
                             </div>
-                            <a href="#" class="conts_btn">
+                            <a th:href="@{#}" class="conts_btn">
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -684,7 +683,7 @@
                                     올 여름도 샐러디로 준비해요
                                 </h5>
                             </div>
-                            <a href="#" class="conts_btn">
+                            <a th:href="@{#}" class="conts_btn">
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -715,14 +714,14 @@
                     <div id="salad_conts" class="tab_contents swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a th:href="@{#}">
                                     <div class="thumb_img">
-                                        <img src="/images/cate_thumb_img_1.jpg" alt="샐러드">
+                                        <img th:src="@{/images/cate_thumb_img_1.jpg}" alt="샐러드">
                                         <!--  hover -->
                                         <div class="thumb_hover">
                                             <ul>
-                                                <li class="wish_icon"><img src="/images/wish_icon.png" alt="찜하기"></li>
-                                                <li class="cart_icon"><img src="/images/cart_icon.png" alt="장바구니"></li>
+                                                <li class="wish_icon"><img th:src="@{/images/wish_icon.png}" alt="찜하기"></li>
+                                                <li class="cart_icon"><img th:src="@{/images/cart_icon.png}" alt="장바구니"></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -754,14 +753,14 @@
                                 </a>
                             </div> <!--// .swiper-slide -->
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a th:href="@{#}">
                                     <div class="thumb_img">
-                                        <img src="/images/cate_thumb_img_2.jpg" alt="샐러드">
+                                        <img th:src="@{/images/cate_thumb_img_2.jpg}" alt="샐러드">
                                         <!--  hover -->
                                         <div class="thumb_hover">
                                             <ul>
-                                                <li class="wish_icon"><img src="/images/wish_icon.png" alt="찜하기"></li>
-                                                <li class="cart_icon"><img src="/images/cart_icon.png" alt="장바구니"></li>
+                                                <li class="wish_icon"><img th:src="@{/images/wish_icon.png}" alt="찜하기"></li>
+                                                <li class="cart_icon"><img th:src="@{/images/cart_icon.png}" alt="장바구니"></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -793,14 +792,14 @@
                                 </a>
                             </div> <!--// .swiper-slide -->
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a th:href="@{#}">
                                     <div class="thumb_img">
-                                        <img src="/images/cate_thumb_img_3.jpg" alt="샐러드">
+                                        <img th:src="@{/images/cate_thumb_img_3.jpg}" alt="샐러드">
                                         <!--  hover -->
                                         <div class="thumb_hover">
                                             <ul>
-                                                <li class="wish_icon"><img src="/images/wish_icon.png" alt="찜하기"></li>
-                                                <li class="cart_icon"><img src="/images/cart_icon.png" alt="장바구니"></li>
+                                                <li class="wish_icon"><img th:src="@{/images/wish_icon.png}" alt="찜하기"></li>
+                                                <li class="cart_icon"><img th:src="@{/images/cart_icon.png}" alt="장바구니"></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -832,14 +831,14 @@
                                 </a>
                             </div> <!--// .swiper-slide -->
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a th:href="@{#}">
                                     <div class="thumb_img">
-                                        <img src="/images/cate_thumb_img_4.jpg" alt="샐러드">
+                                        <img th:src="@{/images/cate_thumb_img_4.jpg}" alt="샐러드">
                                         <!--  hover -->
                                         <div class="thumb_hover">
                                             <ul>
-                                                <li class="wish_icon"><img src="/images/wish_icon.png" alt="찜하기"></li>
-                                                <li class="cart_icon"><img src="/images/cart_icon.png" alt="장바구니"></li>
+                                                <li class="wish_icon"><img th:src="@{/images/wish_icon.png}" alt="찜하기"></li>
+                                                <li class="cart_icon"><img th:src="@{/images/cart_icon.png}" alt="장바구니"></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -871,14 +870,14 @@
                                 </a>
                             </div> <!--// .swiper-slide -->
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a th:href="@{#}">
                                     <div class="thumb_img">
-                                        <img src="/images/cate_thumb_img_4.jpg" alt="샐러드">
+                                        <img th:src="@{/images/cate_thumb_img_4.jpg}" alt="샐러드">
                                         <!--  hover -->
                                         <div class="thumb_hover">
                                             <ul>
-                                                <li class="wish_icon"><img src="/images/wish_icon.png" alt="찜하기"></li>
-                                                <li class="cart_icon"><img src="/images/cart_icon.png" alt="장바구니"></li>
+                                                <li class="wish_icon"><img th:src="@{/images/wish_icon.png}" alt="찜하기"></li>
+                                                <li class="cart_icon"><img th:src="@{/images/cart_icon.png}" alt="장바구니"></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -910,14 +909,14 @@
                                 </a>
                             </div> <!--// .swiper-slide -->
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a th:href="@{#}">
                                     <div class="thumb_img">
-                                        <img src="/images/cate_thumb_img_4.jpg" alt="샐러드">
+                                        <img th:src="@{/images/cate_thumb_img_4.jpg}" alt="샐러드">
                                         <!--  hover -->
                                         <div class="thumb_hover">
                                             <ul>
-                                                <li class="wish_icon"><img src="/images/wish_icon.png" alt="찜하기"></li>
-                                                <li class="cart_icon"><img src="/images/cart_icon.png" alt="장바구니"></li>
+                                                <li class="wish_icon"><img th:src="@{/images/wish_icon.png}" alt="찜하기"></li>
+                                                <li class="cart_icon"><img th:src="@{/images/cart_icon.png}" alt="장바구니"></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1002,28 +1001,28 @@
                 <div id="video_swiper_slide" class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <video class="on_video" src="/images/video/video_01.mp4" width="100%">
+                            <video class="on_video" th:src="@{/images/video/video_01.mp4}" width="100%">
 
                             </video>
                             <button class="play_btn">재생</button>
                             <button id="stop_btn" class="stop_btn" style="display:none;">정지</button>
                         </div>
                         <div class="swiper-slide">
-                            <video class="on_video" src="/images/video/video_02.mp4" width="100%">
+                            <video class="on_video" th:src="@{/images/video/video_02.mp4}" width="100%">
 
                             </video>
                             <button class="play_btn">재생</button>
                             <button class="stop_btn" style="display:none;">정지</button>
                         </div>
                         <div class="swiper-slide">
-                            <video class="on_video" src="/images/video/video_04.mp4" width="100%">
+                            <video class="on_video" th:src="@{/images/video/video_04.mp4}" width="100%">
 
                             </video>
                             <button class="play_btn">재생</button>
                             <button class="stop_btn" style="display:none;">정지</button>
                         </div>
                         <div class="swiper-slide">
-                            <video class="on_video" src="/images/video/video_03.mp4" width="100%">
+                            <video class="on_video" th:src="@{/images/video/video_03.mp4}" width="100%">
 
                             </video>
                             <button class="play_btn">재생</button>
@@ -1034,13 +1033,13 @@
             </section>
 
             <section id="bt_banner" class="section">
-                <a href="#">
+                <a th:href="@{#}">
                     <div class="banner_txt">
                         <p>최근 2개월 구매 내역에 따라 달라지는 다양한 멤버쉽 혜택</p>
                         <h5>샐러디 멤버쉽 가입하고 <br>
                             최대 15% 할인 쿠폰 받아가세요</h5>
                     </div>
-                    <img src="/images/banner_img.png" alt="배너">
+                    <img th:src="@{/images/banner_img.png}" alt="배너">
                 </a>
             </section>
         </main>
