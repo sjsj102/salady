@@ -6,7 +6,7 @@
   <title th:text="${title}"></title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- favicon -->
-  <link rel="shortcut icon" href="/images/salady_favicon.ico">
+  <link rel="shortcut icon" th:href="@{/images/salady_favicon.ico}">
 
   <!-- css -->
   <link rel="stylesheet" th:href="@{/css/style.css}">
@@ -19,6 +19,36 @@
 
 </head>
 <body>
+
+  <!-- header fragments -->
+  <header th:replace="~{user/fragments/userHeaderFrg :: userHeaderFrg}"></header>
+
+  <!-- custom contents fragments -->
+  <th:block layout:fragment="customContents">
+
+  </th:block>
+
+  <!-- footer fragments -->
+  <footer th:replace="user/fragments/userFooterFrg :: userFooterFrg"></footer>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- plugin -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script th:src="@{/js/jquery.scrollToGiveClass.js}"></script>
+
+  <!-- custom js file link fragments -->
+  <th:block layout:fragment="customJsFile">
+
+  </th:block>
+
+  <!-- js -->
+  <script th:src="@{/js/script.js}"></script>
+
+  <!-- custom js code fragments -->
+  <th:block layout:fragment="customJsCode">
+
+  </th:block>
 
 </body>
 </html>
